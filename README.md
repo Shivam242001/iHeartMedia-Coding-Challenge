@@ -1,5 +1,6 @@
 # iHeartMedia-Coding-Challenge
 
+I implemented the project using Flask. I read in the JSON data as a pandas dataframe and applied the required changes to songRelaseDate column. Using Ajax I recieved the data from the pandas dataframe and displayed it on the web application. I also used JavaScript libraries to sort the table based on each column and implemented the search bar.
 
 
 
