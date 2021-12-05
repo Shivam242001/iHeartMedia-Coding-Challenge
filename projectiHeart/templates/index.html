@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Coding Challenge</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+</head>
 
+<body style="background-color: rgb(250, 250, 250);" >
+
+<h1 style= "color: black; text-align: center; font-size:30pt;">
+<span style="color:black; font-weight:900;">iHeart</span><span style="color:rgb(117, 117, 117); font-weight: 30; opacity:initial;">MEDIA</span>
+<span style="color:black; font-weight: 200;">Coding Challenge</span>
+</h1>
+
+<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Song</th>
+                <th>Artist</th>
+                <th>Song Release Date</th>
+                <th>Play Count</th>
+                <th>Metric A</th>
+                <th>Metric B</th>
+                <th>Metric C</th>
+                <th>Metric D</th>
+                <th>Metric E</th>
+                <th>Metric F</th>
+                <th>Metric G</th>
+                <th>Metric H</th>
+                <th>Metric I</th>
+                <th>Metric J</th>
+                <th>Metric K</th>
+                <th>Metric L</th>
+                <th>Metric M</th>
+                <th>Metric N</th>
+                <th>Metric O</th>
+                <th>Metric P</th>
+            </tr>
+        </thead>
+    </table>
+<script>
+function setupData() {
+    $(document).ready(function () {
+        $('#example').DataTable({
+            "ajax": {
+                "url": "/index_get_data", 
+                "dataType": "json",
+                "dataSrc": "data",
+                "contentType":"application/json"
+            },
+            "columns": [
+                {"data": "song"},
+                {"data": "artist"},
+                {"data": "songReleaseDate"},
+                {"data": "playCount"},
+                {"data": "metricA"},
+                {"data": "metricB"},
+                {"data": "metricC"},
+                {"data": "metricD"},
+                {"data": "metricE"},
+                {"data": "metricF"},
+                {"data": "metricG"},
+                {"data": "metricH"},
+                {"data": "metricI"},
+                {"data": "metricJ"},
+                {"data": "metricK"},
+                {"data": "metricL"},
+                {"data": "metricM"},
+                {"data": "metricN"},
+                {"data": "metricO"},
+                {"data": "metricP"},
+
+            ]
+        });
+    });
+}
+$( window ).on( "load", setupData );
+</script>
+<p style="font-size: small;"> Made by Shivam Nanda</p>
+</body>
+</html>
