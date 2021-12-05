@@ -12,8 +12,17 @@
 **Sorting based on the Artist**
 <img width="1437" alt="Screen Shot 2021-12-05 at 3 48 09 PM" src="https://user-images.githubusercontent.com/53275147/144765181-d2f2ab66-66a5-4a95-8a79-86bbf3eca14a.png">
 
+
+
+
+
 **Searching a pirticular song**
 <img width="1439" alt="Screen Shot 2021-12-05 at 3 50 37 PM" src="https://user-images.githubusercontent.com/53275147/144765505-2b840af6-9e61-4cff-992a-3b37445601e1.png">
+
+
+
+
+
 
 **Searching all songs by a pirticular artist**
 
