@@ -22,7 +22,6 @@ ab = df.to_dict(orient= "records")
 
 x= {"data": ab}
 
-
 @app.route('/index')
 @app.route('/')
 def index():
@@ -30,8 +29,6 @@ def index():
  
 @app.route('/index_get_data')
 def stuff():
-  # Assume data comes from somewhere else
-
   return jsonify(x)
  
  
